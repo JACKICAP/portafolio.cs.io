@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Saldarriaga | Portafolio</title>
+    <!-- Google Fonts: Syne and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav class="navbar">
+      <div class="profile-switcher">
+        <a href="index.html" class="profile-tab active hover-target">CS</a>
+        <a href="https://salomon-cont.github.io/" target="_blank" rel="noopener noreferrer" class="profile-tab hover-target">SM</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about" class="hover-target">Sobre mí</a></li>
+        <li><a href="#projects" class="hover-target">Proyectos</a></li>
+        <li><a href="#contact" class="hover-target">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <p class="hero-greeting mask-text"><span>Hola, soy</span></p>
+          <h1 class="hero-title mask-text">
+            <span>Carlos Andre</span>
+            <span>Saldarriaga Aguilar</span>
+          </h1>
+          <h2 class="hero-subtitle mask-text"><span>Software Eng. con Inteligencia Artificial</span></h2>
+          <div class="hero-actions mask-text" style="margin-top: 2.5rem;">
+            <span><a href="#" class="button hover-target">Descargar CV</a></span>
+          </div>
+          <div class="scroll-indicator mask-text">
+            <span>Descubre más ↓</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section pt-section">
+        <div class="container line-up">
+          <h2 class="section-title">Sobre mí</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                Soy <strong>estudiante de 4to semestre en SENATI</strong> con un enfoque especial en la <strong>Inteligencia Artificial</strong> y desarrollo de software. Me apasiona aplicar el aprendizaje automático y la visión por computadora a problemas reales.
+              </p>
+              <p>
+                Actualmente me desempeño como <strong>Practicante de Estudios Técnicos Superior en la UGEL</strong>, donde sigo desarrollando mi carrera. Además, cuento con sólidas habilidades prácticas en <strong>Soporte Técnico y Microsoldadura</strong>.
+              </p>
+              <p>
+                Tengo siempre nuevos proyectos en cola, combinando el desarrollo de software y hardware para construir soluciones integrales.
+              </p>
+            </div>
+            <div class="about-stats">
+              <div class="stat-box">
+                <span class="stat-number">01</span>
+                <span class="stat-text">Años de <br>Experiencia</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">AI</span>
+                <span class="stat-text">Especialidad <br>en progreso</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technologies Marquee -->
+          <div class="tech-marquee-wrapper">
+            <div class="marquee marque-left">
+              <div class="marquee-content">
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">HTML & CSS</span>
+                <span class="tech-pill">JSON & JavaScript</span>
+                <span class="tech-pill">C++</span>
+                <span class="tech-pill">SQL</span>
+                <!-- Duplicated for infinite scroll -->
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">HTML & CSS</span>
+                <span class="tech-pill">JSON & JavaScript</span>
+                <span class="tech-pill">C++</span>
+                <span class="tech-pill">SQL</span>
+              </div>
+            </div>
+            
+            <div class="marquee marque-right">
+              <div class="marquee-content">
+                <span class="tech-pill">Machine Learning</span>
+                <span class="tech-pill">Visión Computacional</span>
+                <span class="tech-pill">Git & GitHub</span>
+                <span class="tech-pill">Data Analysis</span>
+                <span class="tech-pill">API REST</span>
+                <!-- Duplicated for infinite scroll -->
+                <span class="tech-pill">Machine Learning</span>
+                <span class="tech-pill">Visión Computacional</span>
+                <span class="tech-pill">Git & GitHub</span>
+                <span class="tech-pill">Data Analysis</span>
+                <span class="tech-pill">API REST</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services-section pt-section">
+        <div class="container line-up">
+          <h2 class="section-title">Lo que ofrezco</h2>
+          <div class="services-grid">
+            <div class="service-card hover-target">
+              <span class="service-icon">🧠</span>
+              <h3>Desarrollo de IA</h3>
+              <p>Entrenamiento e integración de modelos de Machine Learning y Visión Computacional para soluciones analíticas prácticas.</p>
+            </div>
+            <div class="service-card hover-target">
+              <span class="service-icon">💻</span>
+              <h3>Desarrollo Web</h3>
+              <p>Creación de sitios y aplicaciones web a medida utilizando arquitecturas modernas y escalables con diseños premium.</p>
+            </div>
+            <div class="service-card hover-target">
+              <span class="service-icon">📊</span>
+              <h3>Análisis de Datos</h3>
+              <p>Procesamiento, limpieza y visualización de conjuntos de datos para extraer insights valiosos y automatizar decisiones.</p>
+            </div>
+            <div class="service-card hover-target">
+              <span class="service-icon">🔧</span>
+              <h3>Soporte Técnico & Microsoldadura</h3>
+              <p>Mantenimiento avanzado de hardware, diagnóstico a nivel de componentes y microsoldadura de precisión en placas de circuitos.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="experience-section pt-section">
+        <div class="container line-up">
+          <h2 class="section-title">Experiencia y Formación</h2>
+          <div class="timeline">
+            <div class="timeline-item hover-target">
+              <div class="timeline-date">Actualidad</div>
+              <div class="timeline-content">
+                <h3>Practicante de Estudios Técnicos Superior</h3>
+                <h4>UGEL (Unidad de Gestión Educativa Local)</h4>
+                <p>Aplicando conocimientos de desarrollo, soporte informático y análisis de datos para optimizar los procesos de la institución, interactuando con proyectos y sistemas internos.</p>
+              </div>
+            </div>
+            
+            <div class="timeline-item hover-target">
+              <div class="timeline-date">En Curso</div>
+              <div class="timeline-content">
+                <h3>Estudiante de SENATI (4to Semestre)</h3>
+                <h4>Especialización Tecnológica e IA</h4>
+                <p>Formación técnica especializada, incursionando en arquitecturas de Redes Neuronales, algoritmos de Machine Learning y Visión Computacional.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section id="certifications" class="certifications-section pt-section">
+        <div class="container line-up">
+          <h2 class="section-title">Certificaciones</h2>
+          <div class="cert-grid">
+            <div class="cert-card hover-target">
+              <h4>Fundamentos de IA y Machine Learning</h4>
+              <p class="cert-issuer">Placeholder Institución A</p>
+            </div>
+            <div class="cert-card hover-target">
+              <h4>Desarrollo Backend y APIs</h4>
+              <p class="cert-issuer">Placeholder Institución B</p>
+            </div>
+            <div class="cert-card hover-target">
+              <h4>Bases de Datos y SQL</h4>
+              <p class="cert-issuer">Placeholder Institución C</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section pt-section">
+        <div class="container line-up">
+          <div class="projects-header">
+            <h2 class="section-title">Proyectos Destacados</h2>
+            <p>Una selección de mi trabajo y experimentación continua.</p>
+          </div>
+          
+          <div class="projects-list">
+            <!-- Project 1 -->
+            <div class="project-item hover-target" data-image="https://jackicap.github.io/ppe-detector/assets/demo-thumbnail.jpg">
+              <div class="project-info">
+                <h3>Sistema Inteligente de Detección de EPPs</h3>
+                <span class="project-tags">Visión Computacional • YOLO11 • Roboflow</span>
+              </div>
+              <div class="project-link-wrapper">
+                <a href="https://jackicap.github.io/ppe-detector/presentation.html" target="_blank" class="project-link">Ver Proyecto ↗</a>
+              </div>
+            </div>
+
+            <!-- Future projects placeholders -->
+             <div class="project-item hover-target" data-image="">
+              <div class="project-info">
+                <h3 class="placeholder-text">Proyecto en Desarrollo...</h3>
+                <span class="project-tags">AI • Desarrollo Web</span>
+              </div>
+              <div class="project-link-wrapper">
+                <span class="project-link disabled">Próximamente</span>
+              </div>
+            </div>
+            
+             <div class="project-item hover-target" data-image="">
+              <div class="project-info">
+                <h3 class="placeholder-text">Próxima Aventura Tecnológica</h3>
+                <span class="project-tags">Innovación</span>
+              </div>
+              <div class="project-link-wrapper">
+                <span class="project-link disabled">Próximamente</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section pt-section">
+        <div class="container line-up">
+          <h2 class="section-title">Conversemos</h2>
+          <p class="contact-text">
+            Si te interesa mi perfil, mis proyectos o quieres colaborar en alguna idea impulsada por la inteligencia artificial, no dudes en contactarme.
+          </p>
+          <div class="contact-info">
+            <a href="mailto:csaldarr782@gmail.com" class="contact-card hover-target">
+              <span class="contact-icon">✉</span>
+              <div>
+                <h4>Correo Electrónico</h4>
+                <p>csaldarr782@gmail.com</p>
+              </div>
+            </a>
+            <a href="https://wa.me/51958227438" target="_blank" class="contact-card hover-target">
+              <span class="contact-icon">✆</span>
+              <div>
+                <h4>WhatsApp / Celular</h4>
+                <p>+51 958 227 438</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Code Snippet Terminal Modal -->
+      <div id="code-modal" class="code-modal">
+        <div class="code-modal-content">
+          <div class="code-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span id="code-title" class="code-title">Terminal</span>
+            <button id="close-code-modal" class="close-btn hover-target">&times;</button>
+          </div>
+          <pre><code id="code-typing-area"></code><span class="typing-cursor">_</span></pre>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2026 Carlos Andre Saldarriaga Aguilar. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Project Hover Preview Element -->
+    <div id="project-preview" class="project-preview">
+      <img src="" alt="Project Preview" id="preview-img">
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
